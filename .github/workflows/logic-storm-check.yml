@@ -2,8 +2,8 @@ name: Logic Storm Guard (CI)
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 jobs:
   validation-ritual:
     name: Execute Consistency Check
